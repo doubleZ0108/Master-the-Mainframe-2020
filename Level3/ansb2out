@@ -1,0 +1,46 @@
+Good job! You've successfully used an Ansible playbook to convert
+ASCII-encoded text to EBCDIC, and you did it in a way that can be quickly
+changed to convert any other data sets you come across.
+
+We're almost to the end of ANSB2, but don't let us stop you from exploring.
+You probably noticed TSO command modules, and if you want to run UNIX
+commands, you can do that using the regular "Command" module, since the
+mainframe is, in this regard, just another platform that can be easily
+automated through modern tools. Read up on that here, it *might* come in
+handy for the last step:
+https://docs.ansible.com/ansible/latest/modules/command_module.html
+
+To finish this challenge, you need to (you guessed it) created another
+playbook. This one will:
+1) Take this text
+2) Move it over to your home directory on the mainframe(not your local system)
+The name of the file should be ansb2out
+so the full path of the file will be (/z/zxxxxx/ansb2out)
+3) Insert a message, or a quote, or just something you want to say at the
+bottom of the file. Keep it clean (we do read these things) and be sure
+to include your userid in that message somewhere.
+
+BTW, a tip for that third item, don't spend too much time trying to use
+z/OS utilities to insert your message and username. Focus instead on the
+core "Command" module.
+https://docs.ansible.com/ansible/latest/modules/command_module.html
+
+One last tip, remember that record lengths are a thing, and if you go beyond
+the record length, you'll have to start a new line, otherwise it won't fit
+into that data set member. It's easier to forget about that when writing
+text as opposed to code.
+
+When you've got your playbook working to produce the output requested above,
+enter the command to finish this challenge (ANSB2) however you like.
+
+You've accomplished so much through this series of challenges, and we hope
+that you've learned a lot, but we also hope you had some fun along the way.
+Don't stop here. Figure out where you need to go to grow and learn.
+The people who go the furthest in this contest, and in life, do not avoid
+challenges. They seek new and inventive ways to solve them.
+Here's to the problem-solvers.
+
+-MtM2020
+
+===========================
+Less is more.  doubleZ /Z09150
